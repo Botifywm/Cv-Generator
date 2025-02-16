@@ -1,0 +1,157 @@
+body {
+  background-color: #1a300c;
+}
+
+.formandCv {
+  display: grid;
+  /* grid-template-columns: 350px minmax(45rem, 55rem); */
+  grid-template-columns: 350px 1fr;
+  gap: 6rem;
+}
+
+.form {
+  display: grid;
+  /* padding-right: 3rem; */
+  grid-template-rows: repeat(4, auto);
+  gap: 3rem;
+  color: white;
+}
+
+.cvContainer {
+  display: grid;
+  justify-items: center;
+}
+
+.mainCV {
+  border: 1px solid black;
+  background-color: whitesmoke;
+  color: black;
+  padding: 2rem;
+
+  width: 45rem;
+  aspect-ratio: 210 / 297; /* A4 aspect ratio */
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* overflow: hidden; */
+  border-radius: 5px;
+}
+
+.personalHeader,
+.eduHeader,
+.expHeader {
+  border-bottom: 1px solid white;
+  margin-bottom: 1rem;
+  padding-bottom: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: wheat;
+}
+
+.personalForm,
+.educationForm,
+.experiencelForm {
+  align-self: center;
+}
+
+.personal-field,
+.education-field,
+.experience-field {
+  display: grid;
+  gap: 0.5rem;
+  align-content: start;
+}
+
+.education-field,
+.experience-field {
+  padding-bottom: 2rem;
+}
+
+.add {
+  background: silver;
+  color: black;
+  margin-top: 1rem;
+  width: 350px;
+}
+
+textarea {
+  width: 320px;
+}
+
+.personalCVBody {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
+.nameCV {
+  font-weight: bold;
+}
+
+.contactDetails {
+  text-align: center;
+}
+
+.line {
+  display: inline;
+  font-size: 1.2rem;
+}
+
+.emailCV {
+  border-right: 1px solid black;
+}
+
+.emailCV,
+.numberCV {
+  margin-top: 0;
+  padding: 0 1rem;
+}
+
+.schoolNameCV,
+.companyNameCV {
+  font-weight: bold;
+}
+
+.eduCVHeader,
+.expCVHeader {
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+.educationBody {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.experienceBody {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+}
+
+.titleCV {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-top: 0;
+}
+
+.eduDate,
+.expDate {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-content: center;
+  justify-self: end;
+}
+
+.responsibilitiesEduCV,
+.positionTitleCV {
+  margin-top: 0;
+}
+
+.positionTitleCV {
+  font-style: italic;
+}
+
+.responsibilitiesEduCV {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
