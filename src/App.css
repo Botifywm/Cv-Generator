@@ -36,6 +36,18 @@ body {
   border-radius: 5px;
 }
 
+.header {
+  display: grid;
+  color: #c7cfc7;
+  grid-template-columns: 17rem 4rem;
+}
+
+svg {
+  width: 3rem;
+  justify-self: center;
+  align-self: center;
+}
+
 .personalHeader,
 .eduHeader,
 .expHeader {
